@@ -1,6 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
-import { SignedIn, SignedOut } from "@clerk/clerk-react";
 
 import Layout from "./layout/Layout";
 
@@ -19,159 +18,110 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 
 function App() {
-
   return (
     <>
       <Toaster position="top-right" />
 
       <Routes>
 
-        {/* PUBLIC DASHBOARD PREVIEW */}
-
+        {/* PUBLIC DASHBOARD */}
         <Route
           path="/"
           element={
             <Layout>
-              <Dashboard previewMode />
+              <Dashboard />
             </Layout>
           }
         />
 
-        {/* AUTH PAGES */}
-
+        {/* AUTH PAGES (still accessible if you keep them) */}
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
 
-        {/* PROTECTED ROUTES */}
+        {/* ALL PUBLIC ROUTES */}
 
         <Route
           path="/leads"
           element={
-            <>
-              <SignedIn>
-                <Layout><Leads /></Layout>
-              </SignedIn>
-              <SignedOut>
-                <Navigate to="/signup" />
-              </SignedOut>
-            </>
+            <Layout>
+              <Leads />
+            </Layout>
           }
         />
 
         <Route
           path="/pipeline"
           element={
-            <>
-              <SignedIn>
-                <Layout><Pipeline /></Layout>
-              </SignedIn>
-              <SignedOut>
-                <Navigate to="/signup" />
-              </SignedOut>
-            </>
+            <Layout>
+              <Pipeline />
+            </Layout>
           }
         />
 
         <Route
           path="/visits"
           element={
-            <>
-              <SignedIn>
-                <Layout><Visits /></Layout>
-              </SignedIn>
-              <SignedOut>
-                <Navigate to="/signup" />
-              </SignedOut>
-            </>
+            <Layout>
+              <Visits />
+            </Layout>
           }
         />
 
         <Route
           path="/inventory"
           element={
-            <>
-              <SignedIn>
-                <Layout><Inventory /></Layout>
-              </SignedIn>
-              <SignedOut>
-                <Navigate to="/signup" />
-              </SignedOut>
-            </>
+            <Layout>
+              <Inventory />
+            </Layout>
           }
         />
 
         <Route
           path="/owners"
           element={
-            <>
-              <SignedIn>
-                <Layout><Owners /></Layout>
-              </SignedIn>
-              <SignedOut>
-                <Navigate to="/signup" />
-              </SignedOut>
-            </>
+            <Layout>
+              <Owners />
+            </Layout>
           }
         />
 
         <Route
           path="/agents"
           element={
-            <>
-              <SignedIn>
-                <Layout><Agents /></Layout>
-              </SignedIn>
-              <SignedOut>
-                <Navigate to="/signup" />
-              </SignedOut>
-            </>
+            <Layout>
+              <Agents />
+            </Layout>
           }
         />
 
         <Route
           path="/availability"
           element={
-            <>
-              <SignedIn>
-                <Layout><FindAvailability /></Layout>
-              </SignedIn>
-              <SignedOut>
-                <Navigate to="/signup" />
-              </SignedOut>
-            </>
+            <Layout>
+              <FindAvailability />
+            </Layout>
           }
         />
 
         <Route
           path="/nearby"
           element={
-            <>
-              <SignedIn>
-                <Layout><Nearby /></Layout>
-              </SignedIn>
-              <SignedOut>
-                <Navigate to="/signup" />
-              </SignedOut>
-            </>
+            <Layout>
+              <Nearby />
+            </Layout>
           }
         />
 
         <Route
           path="/lead/:id"
           element={
-            <>
-              <SignedIn>
-                <Layout><LeadDetails /></Layout>
-              </SignedIn>
-              <SignedOut>
-                <Navigate to="/signup" />
-              </SignedOut>
-            </>
+            <Layout>
+              <LeadDetails />
+            </Layout>
           }
         />
 
         {/* FALLBACK */}
-
         <Route path="*" element={<Navigate to="/" />} />
 
       </Routes>

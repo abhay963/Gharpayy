@@ -1,7 +1,13 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { FiSearch, FiBell } from "react-icons/fi";
-import { UserButton, useUser, SignedIn } from "@clerk/clerk-react";
+import {
+  UserButton,
+  useUser,
+  SignedIn,
+  SignedOut,
+  SignUpButton
+} from "@clerk/clerk-react";
 
 export default function Header() {
   const [isSearchFocused, setIsSearchFocused] = useState(false);
@@ -17,7 +23,8 @@ export default function Header() {
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
-            {/* LOGO + NAME */}
+
+            {/* LOGO */}
             <div className="flex items-center gap-3">
               <motion.div
                 whileHover={{ scale: 1.06 }}
@@ -26,6 +33,7 @@ export default function Header() {
               >
                 <span className="text-lg font-black text-white">G</span>
               </motion.div>
+
               <div className="hidden sm:flex flex-col">
                 <h1 className="text-xl font-bold bg-gradient-to-r from-teal-200 via-emerald-200 to-cyan-200 bg-clip-text text-transparent">
                   Gharpayy
@@ -36,9 +44,10 @@ export default function Header() {
               </div>
             </div>
 
-            {/* RIGHT SIDE: Search + Notifications + User */}
+            {/* RIGHT SIDE */}
             <div className="flex items-center gap-3 sm:gap-5">
-              {/* SEARCH BAR – expands on focus */}
+
+              {/* SEARCH */}
               <div
                 className={`group relative flex h-10 items-center rounded-full border transition-all duration-300 ${
                   isSearchFocused
@@ -52,7 +61,11 @@ export default function Header() {
                 />
                 <input
                   type="text"
-                  placeholder={isSearchFocused ? "Search leads by name, phone or source..." : "Search"}
+                  placeholder={
+                    isSearchFocused
+                      ? "Search leads by name, phone or source..."
+                      : "Search"
+                  }
                   className={`w-full bg-transparent pl-10 pr-4 text-sm text-gray-100 placeholder-gray-500 focus:outline-none ${
                     isSearchFocused ? "opacity-100" : "opacity-0 sm:opacity-100"
                   }`}
@@ -61,18 +74,30 @@ export default function Header() {
                 />
               </div>
 
-              {/* NOTIFICATIONS (future: new leads, follow-ups, reminders) */}
+              {/* NOTIFICATIONS */}
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.94 }}
                 className="relative flex h-10 w-10 items-center justify-center rounded-full bg-white/6 text-gray-300 hover:bg-white/12 hover:text-teal-300 transition-colors"
               >
                 <FiBell size={18} />
-                {/* Red dot – can be conditional later based on unread count */}
                 <span className="absolute right-2.5 top-2.5 h-2.5 w-2.5 rounded-full bg-red-500 ring-2 ring-red-500/30" />
               </motion.button>
 
-              {/* CLERK USER BUTTON – perfect for agents/admins */}
+              {/* SIGN UP BUTTON (when logged out) */}
+              <SignedOut>
+                <SignUpButton mode="modal">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="px-4 py-2 rounded-lg bg-gradient-to-r from-teal-500 to-emerald-600 text-white text-sm font-semibold shadow-md hover:shadow-lg"
+                  >
+                    Sign Up
+                  </motion.button>
+                </SignUpButton>
+              </SignedOut>
+
+              {/* USER BUTTON (when logged in) */}
               {isLoaded && (
                 <SignedIn>
                   <UserButton
@@ -89,12 +114,12 @@ export default function Header() {
                   />
                 </SignedIn>
               )}
+
             </div>
           </div>
         </div>
       </motion.header>
 
-      {/* Spacer to prevent content overlap */}
       <div className="h-16" />
     </>
   );
