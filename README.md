@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://via.placeholder.com/1200x400/0f172a/38bdf8?text=GharPayy+-+Modern+Real+Estate+CRM" alt="GharPayy Hero Banner" width="100%"/>
+  
   
   <h1>🏠 GharPayy</h1>
   <p><strong>The modern full-stack CRM built for real estate teams</strong></p>
