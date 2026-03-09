@@ -1,178 +1,223 @@
-<div align="center">
-  
-  
-  <h1>🏠 GharPayy</h1>
-  <p><strong>The modern full-stack CRM built for real estate teams</strong></p>
-  
-  <p>
-    <a href="https://gharpayy-595d.vercel.app/">
-      <img src="https://img.shields.io/badge/Live%20Demo-Click%20Here-blueviolet?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo"/>
-    </a>
-    &nbsp;&nbsp;
-    <a href="https://github.com/yourusername/gharpayy/stargazers">
-      <img src="https://img.shields.io/github/stars/yourusername/gharpayy?style=for-the-badge&color=yellow" alt="GitHub Stars"/>
-    </a>
-    &nbsp;&nbsp;
-    <img src="https://img.shields.io/badge/Tech%20Stack-React%20%7C%20Node.js%20%7C%20PostgreSQL-06b6d4?style=for-the-badge" alt="Tech Stack"/>
-  </p>
+# 🏠 GharPayy
 
-  <p>Manage leads, properties, agents, visits & analytics — all in one sleek dashboard.</p>
-</div>
+### A modern CRM platform built for real-estate teams
 
-<br/>
+GharPayy is a **full-stack real estate CRM** designed to help property businesses manage **leads, listings, agents, visits, and analytics** in one unified dashboard.
 
-## ✨ Why GharPayy Stands Out
+It focuses on **speed, usability, and actionable insights** so teams can close deals faster and stay organized.
 
-- 🚀 **Preview Mode** — Explore the full dashboard **without signing up** (auto-popup after preview)
-- 📈 **Real-time Analytics** — Conversion funnels, agent leaderboards, visit trends
-- 🗺️ **Interactive Maps** — Leaflet-powered nearby properties + Google Maps directions
-- 🎯 **Lead Pipeline** — Kanban-style drag-and-drop stages
-- 🏡 **Smart Inventory** — Track owners, availability & listings
-- 🔒 **Secure Auth** — Powered by Clerk (email + social login)
+---
 
-<br/>
+## 🔗 Live Demo
 
-## 🌟 Key Features
+**Explore the product instantly**
 
-<details>
-<summary>📊 Analytics Dashboard (click to expand)</summary>
+https://gharpayy-595d.vercel.app/
 
-- Lead volume & source breakdown
-- Conversion rate tracking over time
-- Agent performance leaderboard & rankings
-- Visit statistics & trend graphs (Recharts)
-- Interactive stat cards with hover effects
+Preview mode allows you to **experience the dashboard without creating an account.**
 
-</details>
+---
 
-<details>
-<summary>👥 Lead Management</summary>
+# ✨ Features
 
-- Add/edit leads with rich profiles
-- Pipeline stages (New → Contacted → Qualified → Visit → Closed)
-- Status tags & priority levels
-- Lead history timeline
+## 📊 Analytics Dashboard
+Powerful analytics to track performance and sales.
 
-</details>
+- Lead volume tracking
+- Conversion rate insights
+- Agent performance leaderboard
+- Visit trends and analytics
+- Interactive charts and statistics
 
-<details>
-<summary>🏢 Property Inventory & Owners</summary>
+---
 
-- Full CRUD for listings & owners
-- Availability calendar
-- Photos, amenities, pricing fields
+## 👥 Lead Management
 
-</details>
+Manage customer leads across the entire sales pipeline.
 
-<details>
-<summary>🗺️ Nearby Properties Map</summary>
+Features include:
 
-- Animated Leaflet markers
-- Clustering for clean view
-- Click → view details + get directions (Google Maps)
+- Create and update lead profiles
+- Drag-and-drop pipeline stages  
+  *(New → Contacted → Qualified → Visit → Closed)*
+- Lead history tracking
+- Status tags and priority labels
 
-</details>
+---
 
-<details>
-<summary>📅 Visit Scheduling</summary>
+## 🏡 Property Inventory
 
-- Calendar integration
-- Upcoming / past visits list
-- Reminder system (future: WhatsApp notifications)
+A centralized system for managing property listings.
 
-</details>
+Capabilities:
 
-<details>
-<summary>🧑‍💼 Agent Management</summary>
+- Add and manage properties
+- Owner information management
+- Pricing, amenities, and availability tracking
+- Photo and listing management
 
+---
+
+## 🗺️ Nearby Properties Map
+
+Interactive property exploration using **Leaflet Maps**.
+
+Includes:
+
+- Map-based property browsing
+- Animated property markers
+- Property clustering for better visualization
+- Direct Google Maps navigation
+
+---
+
+## 📅 Visit Scheduling
+
+Schedule and manage property visits easily.
+
+Features:
+
+- Upcoming and past visit tracking
+- Calendar-based scheduling
+- Visit reminders *(future WhatsApp integration)*
+
+---
+
+## 🧑‍💼 Agent Management
+
+Track agent productivity and performance.
+
+Capabilities:
+
+- Agent visit statistics
 - Booking tracking
-- Performance metrics
-- Top performers leaderboard
+- Performance leaderboards
+- Top performer insights
 
-</details>
+---
 
-<br/>
+# ⚙️ Tech Stack
 
-## 🛠️ Tech Stack (2026-ready)
+## Frontend
+- React (Vite)
+- Tailwind CSS
+- Framer Motion
+- Recharts
+- Leaflet Maps
+- Clerk Authentication
+- React Hot Toast
 
-| Layer       | Technologies                              |
-|-------------|-------------------------------------------|
-| Frontend    | React (Vite), Tailwind CSS, Framer Motion, Recharts, Leaflet, Clerk, React Hot Toast |
-| Backend     | Node.js, Express.js, PostgreSQL (Neon), REST APIs |
-| AI Utils    | Groq API                                  |
-| Deployment  | Vercel                                    |
+## Backend
+- Node.js
+- Express.js
+- PostgreSQL (Neon)
 
-<br/>
+## AI Utilities
+- Groq API
 
-## 🏗️ Project Structure
+## Deployment
+- Vercel
 
-GharPayy/
-├── backend/              # Express + PostgreSQL
-│   ├── models/
-│   ├── routes/
-│   ├── utils/
-│   ├── server.js
-│   └── .env
+---
+
+# 🏗 Project Structure
+
+
+GharPayy
 │
-├── frontend/             # React + Vite
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── components/   # LeadCard, StatCard, VisitModal...
-│   │   ├── layout/       # Sidebar, Header
-│   │   ├── pages/        # Dashboard, Leads, Pipeline, Nearby...
-│   │   ├── services/
-│   │   └── App.jsx
-│   └── .env
+├── backend
+│ ├── models
+│ ├── routes
+│ ├── utils
+│ ├── server.js
+│ └── .env
+│
+├── frontend
+│ ├── src
+│ │ ├── assets
+│ │ ├── components
+│ │ ├── layout
+│ │ ├── pages
+│ │ ├── services
+│ │ └── App.jsx
+│ └── .env
 │
 └── README.md
 
 
-⚡ Quick Start (Local Development)
+---
 
-Clone the repoBashgit clone https://github.com/yourusername/gharpayy.git
+# 🚀 Getting Started
+
+## 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/gharpayy.git
 cd gharpayy
-BackendBashcd backend
+2️⃣ Setup Backend
+cd backend
 npm install
-# Add .env → DATABASE_URL=...  GROQ_API_KEY=...
+
+Create a .env file
+
+DATABASE_URL=your_database_url
+GROQ_API_KEY=your_api_key
+
+Run the server
+
 npm run dev
-# → http://localhost:5000
-FrontendBashcd ../frontend
+
+Backend runs on:
+
+http://localhost:5000
+3️⃣ Setup Frontend
+cd frontend
 npm install
-# Add .env → VITE_CLERK_PUBLISHABLE_KEY=...
+
+Create .env
+
+VITE_CLERK_PUBLISHABLE_KEY=your_key
+
+Run frontend
+
 npm run dev
-# → http://localhost:5173
 
+Frontend runs on:
 
-
-🌍 Live Experience
-👉 Try GharPayy Now
-(No signup needed for preview — feel the dashboard in action!)
-
-
+http://localhost:5173
 📸 Screenshots
-(Add your actual screenshots here — they make a huge difference!)
 
+Add screenshots of:
 
+Dashboard
 
+Lead pipeline
 
+Analytics page
 
+Nearby map view
 
+(Screenshots help visitors understand the project quickly.)
 
-🔮 Roadmap / Future Enhancements
+🔮 Future Roadmap
 
-🤖 AI Lead Scoring & smart recommendations (using Groq)
-👑 Role-based Access (Admin vs Agent)
-📲 WhatsApp Automation for leads & visit reminders
-🔍 Advanced Property Search & Recommendations
-📊 Exportable Reports (PDF/CSV)
+Upcoming improvements planned for GharPayy:
 
+AI lead scoring and smart recommendations
 
+Role-based access control (Admin / Agent)
 
+WhatsApp automation for leads and visit reminders
 
-  Built with passion by
-  Abhay Kumar Yadav
-  B.Tech IT • Chandigarh Engineering College
-  Creating scalable SaaS & intelligent real-estate tools 🚀
-  
-    <img src="https://img.shields.io/badge/Star%20on%20GitHub-⭐-orange?style=for-the-badge&#x26;logo=github" alt="Star">
-  
+Advanced property search and filtering
+
+Exportable analytics reports (PDF / CSV)
+
+👨‍💻 Author
+
+Abhay Kumar Yadav
+
+B.Tech IT
+Chandigarh Engineering College, Landran
+
+Passionate about building scalable SaaS products and intelligent real-world tech solutions.
