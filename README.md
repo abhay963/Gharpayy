@@ -72,6 +72,35 @@ gharpayy
  │ └ App.jsx
 
 ```
+
+---
+
+# 📸 Screenshots
+
+<div align="center">
+
+### 📊 Dashboard
+<img src="screenshots/Dashboard.png" width="900"/>
+
+### 👥 Leads Management
+<img src="screenshots/leads.png" width="900"/>
+
+### 🔁 Sales Pipeline
+<img src="screenshots/pipeline.png" width="900"/>
+
+### 🏡 Agents
+<img src="screenshots/agent.png" width="900"/>
+
+### 📅 Visits
+<img src="screenshots/visits.png" width="900"/>
+
+### 🗺️ Property Map
+<img src="screenshots/map.png" width="900"/>
+
+</div>
+
+---
+
 🔮 Future Features
 
 🤖 AI Lead Scoring
