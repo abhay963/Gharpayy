@@ -1,277 +1,178 @@
-🏠 GharPayy — Modern Real Estate CRM
-<p align="center">
+<div align="center">
+  <img src="https://via.placeholder.com/1200x400/0f172a/38bdf8?text=GharPayy+-+Modern+Real+Estate+CRM" alt="GharPayy Hero Banner" width="100%"/>
+  
+  <h1>🏠 GharPayy</h1>
+  <p><strong>The modern full-stack CRM built for real estate teams</strong></p>
+  
+  <p>
+    <a href="https://gharpayy-595d.vercel.app/">
+      <img src="https://img.shields.io/badge/Live%20Demo-Click%20Here-blueviolet?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo"/>
+    </a>
+    &nbsp;&nbsp;
+    <a href="https://github.com/yourusername/gharpayy/stargazers">
+      <img src="https://img.shields.io/github/stars/yourusername/gharpayy?style=for-the-badge&color=yellow" alt="GitHub Stars"/>
+    </a>
+    &nbsp;&nbsp;
+    <img src="https://img.shields.io/badge/Tech%20Stack-React%20%7C%20Node.js%20%7C%20PostgreSQL-06b6d4?style=for-the-badge" alt="Tech Stack"/>
+  </p>
 
-🚀 A modern full-stack CRM platform for real estate teams to manage leads, inventory, agents, and analytics.
+  <p>Manage leads, properties, agents, visits & analytics — all in one sleek dashboard.</p>
+</div>
 
-</p> <p align="center">
+<br/>
 
-🌐 Live Demo
-👉 https://gharpayy-595d.vercel.app/
+## ✨ Why GharPayy Stands Out
 
-</p> <p align="center">
+- 🚀 **Preview Mode** — Explore the full dashboard **without signing up** (auto-popup after preview)
+- 📈 **Real-time Analytics** — Conversion funnels, agent leaderboards, visit trends
+- 🗺️ **Interactive Maps** — Leaflet-powered nearby properties + Google Maps directions
+- 🎯 **Lead Pipeline** — Kanban-style drag-and-drop stages
+- 🏡 **Smart Inventory** — Track owners, availability & listings
+- 🔒 **Secure Auth** — Powered by Clerk (email + social login)
 
+<br/>
 
+## 🌟 Key Features
 
+<details>
+<summary>📊 Analytics Dashboard (click to expand)</summary>
 
+- Lead volume & source breakdown
+- Conversion rate tracking over time
+- Agent performance leaderboard & rankings
+- Visit statistics & trend graphs (Recharts)
+- Interactive stat cards with hover effects
 
+</details>
 
+<details>
+<summary>👥 Lead Management</summary>
 
+- Add/edit leads with rich profiles
+- Pipeline stages (New → Contacted → Qualified → Visit → Closed)
+- Status tags & priority levels
+- Lead history timeline
 
+</details>
 
+<details>
+<summary>🏢 Property Inventory & Owners</summary>
 
+- Full CRUD for listings & owners
+- Availability calendar
+- Photos, amenities, pricing fields
 
+</details>
 
-</p>
-✨ Overview
+<details>
+<summary>🗺️ Nearby Properties Map</summary>
 
-GharPayy is a real estate CRM dashboard designed to help property businesses manage leads, agents, inventory, visits, and analytics in one place.
+- Animated Leaflet markers
+- Clustering for clean view
+- Click → view details + get directions (Google Maps)
 
-It combines data analytics, location intelligence, and modern UI to improve sales workflows and lead conversions.
+</details>
 
-Users can preview the dashboard before signup, making it easy to explore the product.
+<details>
+<summary>📅 Visit Scheduling</summary>
 
-🚀 Features
-📊 Analytics Dashboard
+- Calendar integration
+- Upcoming / past visits list
+- Reminder system (future: WhatsApp notifications)
 
-Lead statistics
+</details>
 
-Conversion rate tracking
+<details>
+<summary>🧑‍💼 Agent Management</summary>
 
-Lead source analytics
+- Booking tracking
+- Performance metrics
+- Top performers leaderboard
 
-Visit trend graphs
+</details>
 
-Agent performance leaderboard
+<br/>
 
-👥 Lead Management
+## 🛠️ Tech Stack (2026-ready)
 
-Add and manage leads
+| Layer       | Technologies                              |
+|-------------|-------------------------------------------|
+| Frontend    | React (Vite), Tailwind CSS, Framer Motion, Recharts, Leaflet, Clerk, React Hot Toast |
+| Backend     | Node.js, Express.js, PostgreSQL (Neon), REST APIs |
+| AI Utils    | Groq API                                  |
+| Deployment  | Vercel                                    |
 
-Track lead pipeline stages
+<br/>
 
-View detailed lead profiles
+## 🏗️ Project Structure
 
-Monitor lead status
-
-🏢 Property Inventory
-
-Manage property listings
-
-Track property owners
-
-Manage availability
-
-📍 Nearby Properties Map
-
-Interactive map with Leaflet
-
-Animated property markers
-
-View nearby properties
-
-Open Google Maps directions
-
-📅 Visit Scheduling
-
-Schedule property visits
-
-Track visit history
-
-Manage upcoming visits
-
-🧑‍💼 Agent Management
-
-Track agent bookings
-
-Monitor performance
-
-Leaderboard ranking
-
-🔐 Authentication
-
-Secure login/signup with Clerk
-
-Session management
-
-Protected routes
-
-🎨 Modern UI
-
-TailwindCSS styling
-
-Framer Motion animations
-
-Interactive charts
-
-🧰 Tech Stack
-Frontend
-
-React (Vite)
-
-Tailwind CSS
-
-Framer Motion
-
-Recharts
-
-React Router
-
-Leaflet (Maps)
-
-Clerk Authentication
-
-React Hot Toast
-
-Backend
-
-Node.js
-
-Express.js
-
-PostgreSQL (NeonDB)
-
-REST APIs
-
-Groq API (AI utilities)
-
-🏗️ Project Structure
 GharPayy/
+├── backend/              # Express + PostgreSQL
+│   ├── models/
+│   ├── routes/
+│   ├── utils/
+│   ├── server.js
+│   └── .env
 │
-├── backend/
-│   ├── models/          # Database models
-│   ├── routes/          # API routes
-│   ├── utils/           # Helper utilities
-│   ├── server.js        # Backend server entry point
-│   ├── package.json
-│   ├── .env             # Backend environment variables
-│   └── vercel.json      # Deployment config
-│
-├── frontend/
-│   ├── public/
-│   │   └── vite.svg
-│   │
+├── frontend/             # React + Vite
 │   ├── src/
-│   │   ├── assets/      # Images & icons
-│   │   │
-│   │   ├── components/  # Reusable components
-│   │   │   ├── LeadCard.jsx
-│   │   │   ├── PipelineChart.jsx
-│   │   │   ├── PipelineColumn.jsx
-│   │   │   ├── StatCard.jsx
-│   │   │   └── VisitModal.jsx
-│   │   │
-│   │   ├── layout/      # Layout components
-│   │   │   ├── Header.jsx
-│   │   │   ├── Sidebar.jsx
-│   │   │   └── Layout.jsx
-│   │   │
-│   │   ├── pages/       # Application pages
-│   │   │   ├── Dashboard.jsx
-│   │   │   ├── Leads.jsx
-│   │   │   ├── Pipeline.jsx
-│   │   │   ├── Visits.jsx
-│   │   │   ├── Agents.jsx
-│   │   │   ├── Inventory.jsx
-│   │   │   ├── Owners.jsx
-│   │   │   ├── Nearby.jsx
-│   │   │   └── FindAvailability.jsx
-│   │   │
-│   │   ├── services/    # API calls
-│   │   │   └── api.js
-│   │   │
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── index.css
-│   │
-│   └── package.json
+│   │   ├── assets/
+│   │   ├── components/   # LeadCard, StatCard, VisitModal...
+│   │   ├── layout/       # Sidebar, Header
+│   │   ├── pages/        # Dashboard, Leads, Pipeline, Nearby...
+│   │   ├── services/
+│   │   └── App.jsx
+│   └── .env
 │
 └── README.md
-⚙️ Environment Variables
 
-Create two .env files.
 
-Backend .env
-DATABASE_URL=your_postgresql_connection_string
-PORT=5000
-GROQ_API_KEY=your_groq_api_key
-Frontend .env
-VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+⚡ Quick Start (Local Development)
 
-⚠️ Never commit real secrets to GitHub.
-
-📦 Installation
-1️⃣ Clone the repository
-git clone https://github.com/yourusername/gharpayy.git
-2️⃣ Backend Setup
-cd backend
+Clone the repoBashgit clone https://github.com/yourusername/gharpayy.git
+cd gharpayy
+BackendBashcd backend
 npm install
+# Add .env → DATABASE_URL=...  GROQ_API_KEY=...
 npm run dev
-
-Backend runs on:
-
-http://localhost:5000
-3️⃣ Frontend Setup
-cd frontend
+# → http://localhost:5000
+FrontendBashcd ../frontend
 npm install
+# Add .env → VITE_CLERK_PUBLISHABLE_KEY=...
 npm run dev
+# → http://localhost:5173
 
-Frontend runs on:
 
-http://localhost:5173
-🌍 Live Demo
 
-Try the deployed app:
+🌍 Live Experience
+👉 Try GharPayy Now
+(No signup needed for preview — feel the dashboard in action!)
 
-👉 https://gharpayy-595d.vercel.app/
 
-📊 Dashboard Preview Mode
+📸 Screenshots
+(Add your actual screenshots here — they make a huge difference!)
 
-Visitors can preview the dashboard without signing up.
 
-Flow:
 
-Open homepage
-↓
-Dashboard preview visible
-↓
-After 5 seconds
-↓
-Signup popup appears
-↓
-User must register to continue
-📸 Screenshots (Optional)
 
-Add screenshots here for better GitHub presentation.
 
-/screenshots/dashboard.png
-/screenshots/inventory.png
-/screenshots/map.png
-/screenshots/pipeline.png
-🔮 Future Improvements
 
-AI lead scoring
 
-Role-based access (Admin / Agent)
+🔮 Roadmap / Future Enhancements
 
-WhatsApp lead automation
+🤖 AI Lead Scoring & smart recommendations (using Groq)
+👑 Role-based Access (Admin vs Agent)
+📲 WhatsApp Automation for leads & visit reminders
+🔍 Advanced Property Search & Recommendations
+📊 Exportable Reports (PDF/CSV)
 
-Property recommendation system
 
-Advanced analytics
 
-👨‍💻 Author
 
-Abhay Kumar Yadav
-
-B.Tech IT
-Chandigarh Engineering College
-
-Passionate about building scalable SaaS platforms and intelligent systems.
-
-⭐ Support
-
-If you like this project:
-
-⭐ Star the repository
-🍴 Fork it
-🚀 Build something awesome
+  Built with passion by
+  Abhay Kumar Yadav
+  B.Tech IT • Chandigarh Engineering College
+  Creating scalable SaaS & intelligent real-estate tools 🚀
+  
+    <img src="https://img.shields.io/badge/Star%20on%20GitHub-⭐-orange?style=for-the-badge&#x26;logo=github" alt="Star">
+  
