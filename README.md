@@ -1,223 +1,91 @@
+<div align="center">
+
 # 🏠 GharPayy
 
-### A modern CRM platform built for real-estate teams
+### Modern CRM for Real Estate Teams
 
-GharPayy is a **full-stack real estate CRM** designed to help property businesses manage **leads, listings, agents, visits, and analytics** in one unified dashboard.
+Manage **Leads • Properties • Agents • Visits • Analytics**  
+in one powerful dashboard.
 
-It focuses on **speed, usability, and actionable insights** so teams can close deals faster and stay organized.
+<br>
 
----
+<a href="https://gharpayy-595d.vercel.app/">
+<img src="https://img.shields.io/badge/🚀 Live Demo-Try Now-blueviolet?style=for-the-badge&logo=vercel&logoColor=white"/>
+</a>
 
-## 🔗 Live Demo
+<img src="https://img.shields.io/badge/Built%20With-React%20%7C%20Node%20%7C%20PostgreSQL-06b6d4?style=for-the-badge"/>
 
-**Explore the product instantly**
+<img src="https://img.shields.io/badge/Auth-Clerk-orange?style=for-the-badge"/>
 
-https://gharpayy-595d.vercel.app/
-
-Preview mode allows you to **experience the dashboard without creating an account.**
-
----
-
-# ✨ Features
-
-## 📊 Analytics Dashboard
-Powerful analytics to track performance and sales.
-
-- Lead volume tracking
-- Conversion rate insights
-- Agent performance leaderboard
-- Visit trends and analytics
-- Interactive charts and statistics
+</div>
 
 ---
 
-## 👥 Lead Management
+# ✨ What Makes GharPayy Special
 
-Manage customer leads across the entire sales pipeline.
-
-Features include:
-
-- Create and update lead profiles
-- Drag-and-drop pipeline stages  
-  *(New → Contacted → Qualified → Visit → Closed)*
-- Lead history tracking
-- Status tags and priority labels
+⚡ **Preview Mode** – Explore the dashboard without signup  
+📊 **Real-time Analytics** – Conversion funnels & trends  
+🏡 **Property Inventory** – Manage listings & owners  
+👥 **Lead Pipeline** – Drag-and-drop sales stages  
+🗺️ **Nearby Map** – Interactive property discovery  
+📅 **Visit Scheduling** – Track upcoming visits  
 
 ---
 
-## 🏡 Property Inventory
+# 🧠 Tech Stack
 
-A centralized system for managing property listings.
+| Frontend | Backend | Database | Auth |
+|--------|--------|--------|--------|
+| React + Vite | Node.js + Express | PostgreSQL (Neon) | Clerk |
 
-Capabilities:
-
-- Add and manage properties
-- Owner information management
-- Pricing, amenities, and availability tracking
-- Photo and listing management
+Libraries: **Tailwind • Framer Motion • Recharts • Leaflet**
 
 ---
 
-## 🗺️ Nearby Properties Map
-
-Interactive property exploration using **Leaflet Maps**.
-
-Includes:
-
-- Map-based property browsing
-- Animated property markers
-- Property clustering for better visualization
-- Direct Google Maps navigation
-
----
-
-## 📅 Visit Scheduling
-
-Schedule and manage property visits easily.
-
-Features:
-
-- Upcoming and past visit tracking
-- Calendar-based scheduling
-- Visit reminders *(future WhatsApp integration)*
-
----
-
-## 🧑‍💼 Agent Management
-
-Track agent productivity and performance.
-
-Capabilities:
-
-- Agent visit statistics
-- Booking tracking
-- Performance leaderboards
-- Top performer insights
-
----
-
-# ⚙️ Tech Stack
-
-## Frontend
-- React (Vite)
-- Tailwind CSS
-- Framer Motion
-- Recharts
-- Leaflet Maps
-- Clerk Authentication
-- React Hot Toast
-
-## Backend
-- Node.js
-- Express.js
-- PostgreSQL (Neon)
-
-## AI Utilities
-- Groq API
-
-## Deployment
-- Vercel
-
----
-
-# 🏗 Project Structure
-
-
-GharPayy
-│
-├── backend
-│ ├── models
-│ ├── routes
-│ ├── utils
-│ ├── server.js
-│ └── .env
-│
-├── frontend
-│ ├── src
-│ │ ├── assets
-│ │ ├── components
-│ │ ├── layout
-│ │ ├── pages
-│ │ ├── services
-│ │ └── App.jsx
-│ └── .env
-│
-└── README.md
-
-
----
-
-# 🚀 Getting Started
-
-## 1️⃣ Clone the Repository
+# ⚡ Quick Start
 
 ```bash
 git clone https://github.com/yourusername/gharpayy.git
 cd gharpayy
-2️⃣ Setup Backend
+
+Backend
+
 cd backend
 npm install
-
-Create a .env file
-
-DATABASE_URL=your_database_url
-GROQ_API_KEY=your_api_key
-
-Run the server
-
 npm run dev
 
-Backend runs on:
+Frontend
 
-http://localhost:5000
-3️⃣ Setup Frontend
 cd frontend
 npm install
-
-Create .env
-
-VITE_CLERK_PUBLISHABLE_KEY=your_key
-
-Run frontend
-
 npm run dev
+🧭 Project Structure
+gharpayy
+ ├ backend
+ │ ├ models
+ │ ├ routes
+ │ └ server.js
+ │
+ ├ frontend
+ │ ├ components
+ │ ├ pages
+ │ └ App.jsx
 
-Frontend runs on:
+```
+🔮 Future Features
 
-http://localhost:5173
-📸 Screenshots
+🤖 AI Lead Scoring
+📲 WhatsApp Automation
+👑 Role-Based Access
+📊 Exportable Reports
 
-Add screenshots of:
-
-Dashboard
-
-Lead pipeline
-
-Analytics page
-
-Nearby map view
-
-(Screenshots help visitors understand the project quickly.)
-
-🔮 Future Roadmap
-
-Upcoming improvements planned for GharPayy:
-
-AI lead scoring and smart recommendations
-
-Role-based access control (Admin / Agent)
-
-WhatsApp automation for leads and visit reminders
-
-Advanced property search and filtering
-
-Exportable analytics reports (PDF / CSV)
-
-👨‍💻 Author
+<div align="center">
+Built with ❤️ by
 
 Abhay Kumar Yadav
 
-B.Tech IT
-Chandigarh Engineering College, Landran
+B.Tech IT • Chandigarh Engineering College
 
-Passionate about building scalable SaaS products and intelligent real-world tech solutions.
+⭐ Star this repo if you like the project
+
+</div>
